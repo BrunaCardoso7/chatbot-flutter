@@ -1,0 +1,40 @@
+# Arquivos gerados automaticamente
+/build/
+/android/.gradle/
+/android/app/build/
+/ios/Pods/
+/ios/build/
+/macos/Pods/
+/macos/build/
+/linux/build/
+/windows/build/
+
+# Configurações locais
+/android/local.properties
+/ios/Flutter/.last_build_id
+/ios/Runner.xcworkspace/xcuserdata/
+/ios/Flutter/App.framework
+/ios/Flutter/Flutter.podspec
+/ios/Flutter/Generated.xcconfig
+/ios/Runner/GeneratedPluginRegistrant.m
+
+# Pacotes e dependências
+/.packages
+/.flutter-plugins
+/.flutter-plugins-dependencies
+
+# Ambientes de desenvolvimento
+/.idea/
+/.vscode/
+.DS_Store
+*.iml
+*.log
+
+# Arquivos sensíveis
+/lib/secrets.dart
+/assets/secrets/
+/android/key.properties
+/ios/Runner/Info.plist
+
+# Outros
+/pubspec.lock # Ignorar se for uma biblioteca Dart

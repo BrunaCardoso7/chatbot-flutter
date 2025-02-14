@@ -1,0 +1,1 @@
+ /home/bruninha-motoplay/flutter/chatbot/.dart_tool/flutter_build/de4b3351ed1b18ab430eb4f78c984d4a/native_assets.yaml: 
