@@ -7,6 +7,9 @@ class TextFormFieldWidget extends StatefulWidget {
   final TextEditingController? controller;
   final TextCapitalization? capitalization;
   final TextInputType? textInputType;
+  final Widget? suffixIcon;
+  final bool? obscureText;
+  final String? Function(String?)? validator;
   const TextFormFieldWidget({
     super.key, 
     this.padding, 
@@ -14,7 +17,10 @@ class TextFormFieldWidget extends StatefulWidget {
     this.hintText, 
     this.controller, 
     this.capitalization, 
-    this.textInputType,
+    this.textInputType, 
+    this.suffixIcon, 
+    this.obscureText, 
+    this.validator,
   });
 
   @override
@@ -43,7 +49,11 @@ class _TextFormFieldWidgetState extends State<TextFormFieldWidget> {
             disabledBorder: defaultBorder,
             enabledBorder: defaultBorder,
             errorBorder: defaultBorder, 
+            suffixIcon: widget.suffixIcon,
+            
           ),
+          obscureText: widget.obscureText ?? false,
+          validator: widget.validator,
       ),
     );
   }
